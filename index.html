@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Product Details</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="product">
+        <img
+          class="product-image"
+          src="./image/tshirt_blue.png"
+          alt="Product Image"
+        />
+      </div>
+
+      <div class="details">
+        <h1>Product Name</h1>
+        <p>
+          Description: Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+          Nullam euismod tincidunt risus, id aliquam risus feugiat in.
+        </p>
+
+        <div class="dropdown">
+          <label for="color">Select Color:</label>
+          <select id="color">
+            <option value="red">Red</option>
+            <option value="blue">Blue</option>
+            <option value="green">Green</option>
+            <!-- Add more color options as needed -->
+          </select>
+        </div>
+
+        <div class="dropdown">
+          <label for="size">Select Size:</label>
+          <select id="size">
+            <option value="small">Small</option>
+            <option value="medium">Medium</option>
+            <option value="large">Large</option>
+            <!-- Add more size options as needed -->
+          </select>
+        </div>
+
+        <button onclick="addToCart()">Add to Cart</button>
+      </div>
+    </div>
+
+    <script src="./js/app.js"></script>
+  </body>
+</html>
